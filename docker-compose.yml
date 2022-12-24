@@ -1,0 +1,30 @@
+version: '3.7'
+
+services:
+  app:
+    build: ./docker
+    init: true
+    container_name: php-app
+    ports:
+      - "80:80"
+    working_dir: /var/www/html
+    volumes:
+      - ./src:/var/www/html
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      XDEBUG_MODE: "develop, debug"
+    deploy:
+      resources:
+        limits:
+          memory: 2048M
+          cpus: "0.1"
+        reservations:
+          memory: 1024M
+
+
+ 
+
+ 
+
+
