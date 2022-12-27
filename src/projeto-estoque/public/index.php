@@ -35,3 +35,7 @@ if ($pagina == '/produto') {
     $title = 'Detalhes do Produto';
     require TEMPLATES . '/produto.php';
 }
+
+if ($pagina == '/produto/criar') {
+    require TEMPLATES . '/criar-produto.php';
+}
