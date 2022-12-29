@@ -2,7 +2,7 @@
 
 <h1>Create Product</h1>
 
-<form action="">
+<form action="<?php echo HOME; ?>?pagina=/produto/salvar" method="POST">
     <div>
         <label for="name-product">Product's name:</label>
         <input type="text" name="name-product" id="name-product" placeholder="Product's name">
@@ -19,6 +19,8 @@
         <label for="value">Product Value:</label>
         <input type="text" name="value" id="value" placeholder="Product Value">
     </div>
+
+    <button type="submit">Submit Product</button>
 </form>
 
 <?php include TEMPLATES . '/includes/footer.php' ?>
