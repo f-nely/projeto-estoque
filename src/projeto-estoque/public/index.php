@@ -39,3 +39,7 @@ if ($pagina == '/produto') {
 if ($pagina == '/produto/criar') {
     require TEMPLATES . '/criar-produto.php';
 }
+
+if ($pagina == '/produto/salvar') {
+    var_dump($_POST);
+}
