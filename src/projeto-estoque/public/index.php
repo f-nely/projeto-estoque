@@ -42,4 +42,5 @@ if ($pagina == '/produto/criar') {
 
 if ($pagina == '/produto/salvar') {
     var_dump($_POST);
+    var_dump($_FILES);
 }
