@@ -19,6 +19,17 @@
         <label for="value">Product Value:</label>
         <input type="text" name="value" id="value" placeholder="Product Value">
     </div>
+    <div>
+        <label for="quantity">Stock Quantity:</label>
+        <input type="number" name="quantity" id="quantity" step="10">
+    </div>
+    <div>
+        <label for="status">Status</label>
+        <select name="status" id="status">
+            <option value="1">Active</option>
+            <option value="0">Inactive</option>
+        </select>
+    </div>
 
     <button type="submit">Submit Product</button>
 </form>
