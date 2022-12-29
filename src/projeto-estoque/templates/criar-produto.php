@@ -2,7 +2,7 @@
 
 <h1>Create Product</h1>
 
-<form action="<?php echo HOME; ?>?pagina=/produto/salvar" method="POST">
+<form action="<?php echo HOME; ?>?pagina=/produto/salvar" method="POST" enctype="multipart/form-data">
     <div>
         <label for="name-product">Product's name:</label>
         <input type="text" name="name-product" id="name-product" placeholder="Product's name">
@@ -29,6 +29,10 @@
             <option value="1">Active</option>
             <option value="0">Inactive</option>
         </select>
+    </div>
+    <div>
+        <label for="photos">Product Photos:</label>
+        <input type="file" name="photos[]" id="photos" multiple>
     </div>
 
     <button type="submit">Submit Product</button>
