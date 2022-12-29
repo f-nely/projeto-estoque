@@ -1,10 +1,24 @@
 <?php include TEMPLATES . '/includes/header.php' ?>
 
-<h1>Criar Produto</h1>
+<h1>Create Product</h1>
 
 <form action="">
-    <label for="name">Full Name:</label>
-    <input type="text" name="name" id="name" placeholder="Your complete name">
+    <div>
+        <label for="name-product">Product's name:</label>
+        <input type="text" name="name-product" id="name-product" placeholder="Product's name">
+    </div>
+    <div>
+        <label for="description">Product Description:</label>
+        <input type="text" name="description" id="description" placeholder="Product Description">
+    </div>
+    <div>
+        <label for="about">About Product:</label>
+        <textarea name="about" id="about" placeholder="About Product"></textarea>
+    </div>
+    <div>
+        <label for="value">Product Value:</label>
+        <input type="text" name="value" id="value" placeholder="Product Value">
+    </div>
 </form>
 
 <?php include TEMPLATES . '/includes/footer.php' ?>
